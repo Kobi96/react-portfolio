@@ -44,14 +44,14 @@ export const headerIntroData = {
   },
   subtitle: "Fullstack Developer ",
   description: {
-    de: "Ich bin Alpay, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
-    en: "I'm Alpay, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
+    de: "Soy Tobias, un desarrollador Fullstack con la meta de impulsar mi carrera y participar en proyectos inspiradores. Aquí presento mis trabajos y mi pasión por el desarrollo web. ¡Trabajemos juntos para crear soluciones digitales y dar forma al futuro!",
+    en: "I'm Tobias, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
   },
   buttons: [
     {
       name: "Contact",
       label: {
-        de: "Kontaktiere mich",
+        de: "Contacto",
         en: "Contact me",
       },
       icon: FiMail,
@@ -60,7 +60,7 @@ export const headerIntroData = {
     {
       name: "Projects",
       label: {
-        de: "Meine Projekte",
+        de: "Mis Proyectos",
         en: "My Projects",
       },
       icon: FiGithub,
@@ -72,21 +72,19 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Tasty App",
+    title: "Food App",
     description:
-      "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
+      "Una aplicación de recetas que construí como proyecto individual para el bootcamp de Henry utilizando React, Express, PostgreSQL y la API de Spoonacular. La aplicación se desarrolló en menos de un mes.",
     description_EN:
-      "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The design was created with Figma. The website is responsive and mobile-optimized.",
+      "A recipe app that I built as the individual proyect for the Henry bootcamp with React, Express, PostgreSQl and the spoonacular API. The app was developed in under a month.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
-      { name: "REST Api", icon: apiicon },
       { name: "React", icon: reacticon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Canva", icon: canvaicon },
-      { name: "Netlify", icon: netlifyicon },
-      { name: "Trello", icon: trelloicon },
+      { name: "Axios", icon: axiosicon },
+      { name: "Express", icon: expressiconwhite },
+      { name: "Node.js", icon: nodejsicon },
     ],
     image: tastyMockup,
     deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
@@ -500,7 +498,7 @@ export const toastMessages = {
 
 export const buttonLabels = {
   language: {
-    de: "DE",
+    de: "SPA",
     en: "EN",
   },
 } as const;
