@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 // @ts-nocheck
 import React, { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
@@ -31,7 +32,7 @@ const Footer: React.FC = () => {
                 to="#"
                 className="text-white text-2xl font-bold hover:text-orange"
               >
-                {language === "DE" ? link.de : link.en}
+                {language === "ESP" ? link.de : link.en}
               </Link>
             }
             modal

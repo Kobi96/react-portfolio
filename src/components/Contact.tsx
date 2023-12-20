@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
   const { ref } = useSectionInView("Contact");
   const { language } = useLanguage();
   const { theme } = useTheme();
-  const [error, setError] = useState<string | any>(null);
+  const [error, setError] = useState<string | null>(null);
 
   const animationReference = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -42,15 +42,15 @@ const Contact: React.FC = () => {
     try {
       const response = await axios.post(apiBaseUrl, data);
       console.log(response);
-      if (language === "DE") {
-        toast.success(toastMessages.successEmailSent.de);
+      if (language === "ESP") {
+        toast.success(toastMessages.successEmailSent.esp);
       } else {
         toast.success(toastMessages.successEmailSent.en);
       }
     } catch (error) {
       console.log(error);
-      if (language === "DE") {
-        toast.error(toastMessages.failedEmailSent.de);
+      if (language === "ESP") {
+        toast.error(toastMessages.failedEmailSent.esp);
       } else {
         toast.error(toastMessages.failedEmailSent.en);
       }
@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
     indentation: string
   ) => {
     const words = text.split(" ");
-    let lines: string[] = [];
+    const lines: string[] = [];
     let currentLine = "";
 
     words.forEach((word) => {
@@ -191,12 +191,12 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
           >
             <p className="text-[--black] mb-6">
               <span className="text-[--orange]">&lt;</span>
-              {language === "DE" ? contactData.title.de : contactData.title.en}
+              {language === "ESP" ? contactData.title.de : contactData.title.en}
               <span className="text-[--orange]">/&gt;</span>
             </p>
 
             <h2 className="text-[--black] text-center">
-              {language === "DE"
+              {language === "ESP"
                 ? contactData.description.de
                 : contactData.description.en}
             </h2>
@@ -232,7 +232,7 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
                 key={index}
                 type={input.type}
                 placeholder={
-                  language === "DE"
+                  language === "ESP"
                     ? `${input.placeholder.de}`
                     : `${input.placeholder.en}`
                 }
@@ -266,7 +266,7 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
             <textarea
               rows={contactData.textarea.rows}
               placeholder={
-                language === "DE"
+                language === "ESP"
                   ? `${contactData.textarea.placeholder.de}`
                   : `${contactData.textarea.placeholder.en}`
               }
@@ -300,19 +300,19 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
                 <span className="checkbox"></span>
               </label>
               <p>
-                {language === "DE"
+                {language === "ESP"
                   ? `${contactData.privacyOptIn.checkbox.de}`
                   : `${contactData.privacyOptIn.checkbox.en}`}
               </p>
             </div>
             <p>
-              {language === "DE"
+              {language === "ESP"
                 ? `${contactData.privacyOptIn.description.de}`
                 : `${contactData.privacyOptIn.description.en}`}
             </p>
             <Button
               value={
-                language === "DE"
+                language === "ESP"
                   ? `${contactData.button.value.de}`
                   : `${contactData.button.value.en}`
               }

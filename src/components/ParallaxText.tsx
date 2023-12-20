@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import { useRef, useState, useEffect } from "react";
 import {
   motion,
@@ -16,6 +14,7 @@ import { useLanguage } from "../context/language-context";
 import { sideBarLeftSocials, liveTickerData } from "../assets/lib/data";
 
 interface ParallaxProps {
+  // eslint-disable-next-line
   children: any;
   baseVelocity: number;
 }
@@ -134,7 +133,7 @@ export default function LiveTicker() {
             rel="noopener noreferrer"
           >
             <span className="text-[--orange]">&lt;</span>
-            {language === "DE"
+            {language === "ESP"
               ? liveTickerData.content.de
               : liveTickerData.content.en}
             <span className="text-[--orange]">/&gt;</span>

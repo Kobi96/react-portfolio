@@ -22,6 +22,7 @@ const AboutMe: React.FC = () => {
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  // eslint-disable-next-line
   const onAutoplayTimeLeft = (_s: any, time: number, progress: number) => {
     if (progressCircle.current && progressContent.current) {
       progressCircle.current.style.setProperty(
@@ -32,7 +33,7 @@ const AboutMe: React.FC = () => {
     }
   };
   const paragraphs =
-    language === "DE" ? aboutMeData.paragraphs_DE : aboutMeData.paragraphs_EN;
+    language === "ESP" ? aboutMeData.paragraphs_DE : aboutMeData.paragraphs_EN;
 
   return (
     <React.Fragment>
@@ -48,12 +49,12 @@ const AboutMe: React.FC = () => {
           >
             <p className="text-[--black] mb-6">
               <span className="text-orange">&lt;</span>
-              {language === "DE" ? aboutMeData.title : aboutMeData.title_EN}
+              {language === "ESP" ? aboutMeData.title : aboutMeData.title_EN}
               <span className="text-orange">/&gt;</span>
             </p>
 
             <h2 className="text-[--black] text-center max-lg:text-left break-words">
-              {language === "DE"
+              {language === "ESP"
                 ? aboutMeData.description
                 : aboutMeData.description_EN}
             </h2>
