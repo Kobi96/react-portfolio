@@ -6,6 +6,7 @@ interface SocialLink {
   link: string;
   icon: string | React.FC<{ className: string }>;
   iconcolor?: string;
+  // eslint-disable-next-line
   altimgname: any;
 }
 

@@ -191,13 +191,15 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
           >
             <p className="text-[--black] mb-6">
               <span className="text-[--orange]">&lt;</span>
-              {language === "ESP" ? contactData.title.de : contactData.title.en}
+              {language === "ESP"
+                ? contactData.title.esp
+                : contactData.title.en}
               <span className="text-[--orange]">/&gt;</span>
             </p>
 
             <h2 className="text-[--black] text-center">
               {language === "ESP"
-                ? contactData.description.de
+                ? contactData.description.esp
                 : contactData.description.en}
             </h2>
           </motion.div>
@@ -233,7 +235,7 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
                 type={input.type}
                 placeholder={
                   language === "ESP"
-                    ? `${input.placeholder.de}`
+                    ? `${input.placeholder.esp}`
                     : `${input.placeholder.en}`
                 }
                 name={input.name}
@@ -267,7 +269,7 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
               rows={contactData.textarea.rows}
               placeholder={
                 language === "ESP"
-                  ? `${contactData.textarea.placeholder.de}`
+                  ? `${contactData.textarea.placeholder.esp}`
                   : `${contactData.textarea.placeholder.en}`
               }
               name={contactData.textarea.name}
@@ -301,19 +303,19 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
               </label>
               <p>
                 {language === "ESP"
-                  ? `${contactData.privacyOptIn.checkbox.de}`
+                  ? `${contactData.privacyOptIn.checkbox.esp}`
                   : `${contactData.privacyOptIn.checkbox.en}`}
               </p>
             </div>
             <p>
               {language === "ESP"
-                ? `${contactData.privacyOptIn.description.de}`
+                ? `${contactData.privacyOptIn.description.esp}`
                 : `${contactData.privacyOptIn.description.en}`}
             </p>
             <Button
               value={
                 language === "ESP"
-                  ? `${contactData.button.value.de}`
+                  ? `${contactData.button.value.esp}`
                   : `${contactData.button.value.en}`
               }
               iconSVG={contactData.icon}

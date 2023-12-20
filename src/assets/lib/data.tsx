@@ -39,19 +39,19 @@ import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    de: "Hola, soy Tobias Olveira",
+    esp: "Hola, soy Tobias Olveira",
     en: "Hi, I'm Tobias Olveira",
   },
   subtitle: "Fullstack Developer ",
   description: {
-    de: "Soy Tobias, un desarrollador Fullstack con la meta de impulsar mi carrera y participar en proyectos inspiradores. Aquí presento mis trabajos y mi pasión por el desarrollo web. ¡Trabajemos juntos para crear soluciones digitales y dar forma al futuro!",
+    esp: "Soy Tobias, un desarrollador Fullstack con la meta de impulsar mi carrera y participar en proyectos inspiradores. Aquí presento mis trabajos y mi pasión por el desarrollo web. ¡Trabajemos juntos para crear soluciones digitales y dar forma al futuro!",
     en: "I'm Tobias, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
   },
   buttons: [
     {
       name: "Contact",
       label: {
-        de: "Contacto",
+        esp: "Contacto",
         en: "Contact me",
       },
       icon: FiMail,
@@ -60,7 +60,7 @@ export const headerIntroData = {
     {
       name: "Projects",
       label: {
-        de: "Mis Proyectos",
+        esp: "Mis Proyectos",
         en: "My Projects",
       },
       icon: FiGithub,
@@ -167,7 +167,7 @@ export const projectsData = [
 
 export const liveTickerData = {
   content: {
-    de: "Weitere Projekte auf Github",
+    esp: "Weitere Projekte auf Github",
     en: "More Projects on Github",
   },
 } as const;
@@ -295,36 +295,36 @@ export const skillsDataCMS = [
 ] as const;
 
 export const navLinks = [
-  { de: "Home", en: "Home", hash: "#home", icon: GoHome },
-  { de: "Skills", en: "Skills", hash: "#skills", icon: GoStack },
-  { de: "Projekte", en: "Projects", hash: "#projects", icon: GoProject },
-  { de: "Über mich", en: "About me", hash: "#about-me", icon: GoPerson },
-  { de: "Kontakt", en: "Contact", hash: "#contact", icon: GoMail },
+  { esp: "Home", en: "Home", hash: "#home", icon: GoHome },
+  { esp: "Skills", en: "Skills", hash: "#skills", icon: GoStack },
+  { esp: "Proyectos", en: "Projects", hash: "#projects", icon: GoProject },
+  { esp: "Acerca de mí", en: "About me", hash: "#about-me", icon: GoPerson },
+  { esp: "Contacto", en: "Contact", hash: "#contact", icon: GoMail },
 ] as const;
 
 export const FooterLinks = [
-  { de: "Impressum", en: "Imprint", hash: "#imprint", data: <Imprint /> },
-  { de: "Datenschutz", en: "Privacy", hash: "#privacy", data: <Privacy /> },
+  { esp: "Impressum", en: "Imprint", hash: "#imprint", data: <Imprint /> },
+  { esp: "Datenschutz", en: "Privacy", hash: "#privacy", data: <Privacy /> },
 ] as const;
 
 export const sideBarRightMail = {
-  link: "mailto:myemail@com",
-  text: "myemail@com",
+  link: "mailto:tobiasolveira@outlook.com",
+  text: "@outlook.com",
 } as const;
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/alpay/",
+    link: "https://www.linkedin.com/in/tobias-olveira-52a0311b7/",
     icon: FiLinkedin,
     altimgname: "linkedin",
   },
   {
-    link: "https://github.com/AlpayC",
+    link: "https://github.com/Kobi96",
     icon: FiGithub,
     altimgname: "github",
   },
   {
-    link: "mailto:myemail@com",
+    link: "mailto:tobiasolveira@outlook.com",
     icon: FiMail,
     altimgname: "mail",
   },
@@ -332,12 +332,12 @@ export const sideBarLeftSocials = [
 
 export const quotesData = [
   {
-    de: '"Es ist überhaupt nicht wichtig, es beim ersten Mal richtig zu machen. Es ist entscheidend, es beim letzten Mal richtig zu machen."',
+    esp: '"Es ist überhaupt nicht wichtig, es beim ersten Mal richtig zu machen. Es ist entscheidend, es beim letzten Mal richtig zu machen."',
     en: `"It's not at all important to get it right the first time. It's vitally important to get it right the last time."`,
     author: "Andrew Hunt",
   },
   {
-    de: '"Das Web ist wie eine Leinwand und der Code ist die Farbe. Erschaffe dein Meisterwerk."',
+    esp: '"Das Web ist wie eine Leinwand und der Code ist die Farbe. Erschaffe dein Meisterwerk."',
     en: `"The web is like a canvas, and code is the paint. Create your masterpiece."`,
   },
 ] as const;
@@ -391,23 +391,23 @@ export const aboutMeData = {
 
 export const contactData = {
   title: {
-    de: "Kontakt",
+    esp: "Contacto",
     en: "Contact",
   },
   description: {
-    de: "Schreib mir eine Nachricht und ich melde mich bei dir.",
+    esp: "Escríbeme un mensaje y me pondré en contacto contigo.",
     en: "Write me a message and I will get back to you.",
   },
   inputfields: [
     {
       name: "name",
       placeholder: {
-        de: "Dein Name",
+        esp: "Tu nombre",
         en: "Your Name",
       },
       type: "text",
       validation: {
-        de: "Bitte gebe deinen Namen ein",
+        esp: "Por favor completar con tu",
         en: "Please fill in your name",
       },
       pattern: "{2}",
@@ -415,12 +415,12 @@ export const contactData = {
     {
       name: "email",
       placeholder: {
-        de: "Deine E-Mail Adresse",
+        esp: "Deine E-Mail Adresse",
         en: "Your E-Mail",
       },
       type: "email",
       validation: {
-        de: "Bitte gebe deine Email ein",
+        esp: "Bitte gebe deine Email ein",
         en: "Please fill in your email",
       },
       pattern: "[@]{4}",
@@ -428,12 +428,12 @@ export const contactData = {
     {
       name: "subject",
       placeholder: {
-        de: "Deine Betreff",
+        esp: "Deine Betreff",
         en: "Your Subject",
       },
       type: "text",
       validation: {
-        de: "Bitte gebe einen Betreff ein",
+        esp: "Bitte gebe einen Betreff ein",
         en: "Please fill in your subject",
       },
       pattern: "{10}",
@@ -441,20 +441,20 @@ export const contactData = {
   ],
   textarea: {
     placeholder: {
-      de: "Deine Nachricht",
+      esp: "Deine Nachricht",
       en: "Your Message",
     },
     name: "message",
     rows: 10,
     validation: {
-      de: "Bitte gebe deine Nachricht ein",
+      esp: "Bitte gebe deine Nachricht ein",
       en: "Please fill in your message",
     },
     pattern: "{10}",
   },
   button: {
     value: {
-      de: "Absenden",
+      esp: "Absenden",
       en: "Send",
     },
   },
@@ -467,11 +467,11 @@ export const contactData = {
   },
   privacyOptIn: {
     checkbox: {
-      de: "Ich stimme zu, dass Alpay meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
+      esp: "Ich stimme zu, dass Alpay meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
       en: "I agree that Alpay may use my personal data (name and e-mail address) to contact me.",
     },
     description: {
-      de: "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben",
+      esp: "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben",
       en: "By submitting this request, you acknowledge that you have read the Private Policy",
     },
   },
@@ -498,7 +498,7 @@ export const toastMessages = {
 
 export const buttonLabels = {
   language: {
-    de: "ESP",
+    esp: "ESP",
     en: "EN",
   },
 } as const;
