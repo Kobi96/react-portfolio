@@ -99,11 +99,11 @@ export const projectsData = [
     },
   },
   {
-    title: "Silentmoon",
+    title: "MSC-Amoblamientos",
     description:
-      "Eine Yoga und Meditations App, die wir als Team mit React, MongoDB, Express und Node.js gebaut haben. Meine Aufgabe als Gitmaster und Backend Entwickler bestand darin, das Backend mit Anbindung anhand einer Restful API zu programmieren und die Datenbank in MongoDB zu modellieren.",
+      "Plataforma E-Commerce excepcionalmente exitosa llamada MSC-Amoblamientos, especializada en amoblamientos comerciales. Utilizando el stack PERN, lideré la creación de esta plataforma desde cero, implementando un diseño eficiente y una arquitectura robusta. Mi contribución abarcó desde el diseño y desarrollo hasta la implementación de características clave, como la gestión de inventario, carrito de compras y sistemas de pago seguros. La plataforma no solo cumplió con las expectativas comerciales, sino que también superó las metas de conversión y proporcionó una experiencia de usuario altamente satisfactoria. Este proyecto no solo demostró mis habilidades técnicas en el desarrollo web, sino también mi capacidad para liderar equipos y gestionar proyectos complejos.",
     description_EN:
-      "A yoga and meditation app that we built as a team with React, MongoDB, Express and Node.js. My task as a gitmaster and backend developer was to program the backend with connection using a restful API and to model the database in MongoDB.",
+      "An exceptionally successful e-commerce platform named MSC-Amoblamientos, specialized in commercial furnishings. Utilizing the PERN stack, I led the creation of this platform from scratch, implementing an efficient design and a robust architecture. My contribution spanned from design and development to the implementation of key features such as inventory management, shopping cart, and secure payment systems. The platform not only met business expectations but also exceeded conversion goals, providing a highly satisfying user experience. This project not only showcased my technical skills in web development but also demonstrated my ability to lead teams and manage complex projects.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
@@ -132,11 +132,11 @@ export const projectsData = [
     },
   },
   {
-    title: "Furniture Organizer",
+    title: "Rick and Morty",
     description:
-      "Eine Möbel-Organizer App, die wir als Duo-Team mit React, MongoDB, Express und Node.js programmiert haben. Als Gitmaster habe ich die Verknüpfung des Frontends mit dem Backend und die Datenbankmodellierung übernommen. Die App ist responsive und mobile-optimiert.",
+      "Desarrollé de manera individual una aplicación llamada 'Rick and Morty' como proyecto durante el bootcamp de Henry. Esta aplicación utiliza tecnologías como React, Express, PostgreSQL y la API de Rick and Morty para mostrar cartas detalladas de los personajes emblemáticos de la serie. Mi enfoque durante este proyecto abarcó desde la concepción y diseño hasta la implementación de características clave, garantizando una experiencia interactiva y atractiva para los usuarios que buscan explorar y conocer más sobre los personajes de Rick and Morty.",
     description_EN:
-      "A furniture organizer app that we programmed as a duo team with React, MongoDB, Express and Node.js. As a gitmaster, I took over the connection of the frontend to the backend and the database modeling. The app is responsive and mobile-optimized.",
+      "I individually developed an application called 'Rick and Morty' as a project during the Henry bootcamp. This application leverages technologies such as React, Express, PostgreSQL, and the Rick and Morty API to showcase detailed cards of the iconic characters from the series. My focus during this project encompassed everything from conception and design to the implementation of key features, ensuring an interactive and engaging experience for users looking to explore and learn more about the characters of Rick and Morty.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
@@ -167,7 +167,7 @@ export const projectsData = [
 
 export const liveTickerData = {
   content: {
-    esp: "Weitere Projekte auf Github",
+    esp: "Más Proyectos en Github",
     en: "More Projects on Github",
   },
 } as const;
@@ -303,8 +303,8 @@ export const navLinks = [
 ] as const;
 
 export const FooterLinks = [
-  { esp: "Impressum", en: "Imprint", hash: "#imprint", data: <Imprint /> },
-  { esp: "Datenschutz", en: "Privacy", hash: "#privacy", data: <Privacy /> },
+  { esp: "Aviso Legal", en: "Imprint", hash: "#imprint", data: <Imprint /> },
+  { esp: "Privacidad", en: "Privacy", hash: "#privacy", data: <Privacy /> },
 ] as const;
 
 export const sideBarRightMail = {
@@ -332,38 +332,38 @@ export const sideBarLeftSocials = [
 
 export const quotesData = [
   {
-    esp: '"Es ist überhaupt nicht wichtig, es beim ersten Mal richtig zu machen. Es ist entscheidend, es beim letzten Mal richtig zu machen."',
+    esp: '"No es importante hacerlo bien la primera vez. Es crucial hacerlo bien la última vez."',
     en: `"It's not at all important to get it right the first time. It's vitally important to get it right the last time."`,
     author: "Andrew Hunt",
   },
   {
-    esp: '"Das Web ist wie eine Leinwand und der Code ist die Farbe. Erschaffe dein Meisterwerk."',
+    esp: '"La web es como un lienzo, y el código es la pintura. Crea tu obra maestra."',
     en: `"The web is like a canvas, and code is the paint. Create your masterpiece."`,
   },
 ] as const;
 
 export const aboutMeData = {
-  title: "Über mich",
+  title: "Sobre mí",
   title_EN: "About me",
-  description: "Ein paar Codeschnippsel über mich",
+  description: "Algunos fragmentos de código sobre mí",
   description_EN: "A few code snippets about me",
-  paragraphs_DE: [
+  paragraphs_ESP: [
     {
-      title: "Die Schaltkreise meines Herzens",
+      title: "Los circuitos de mi corazón",
       description:
-        "Wenn ich nicht in der digitalen Welt unterwegs bin, durchstreife ich die faszinierende Welt der Technik und Hardware. Schaltkreise und Lötstellen sind für mich wie Puzzleteile eines aufregenden Abenteuers.",
+        "Cuando no estoy navegando en el mundo digital, exploró el fascinante universo de la tecnología y el hardware. Los circuitos y las soldaduras son como piezas de rompecabezas para mí en una emocionante aventura.",
       icon: hardwareicon,
     },
     {
-      title: "Auf der Überholspur des Lebens",
+      title: "En la vía rápida de la vida",
       description:
-        "Neben dem Coden befinde ich mich gerne auf der Überholspur – im wahrsten Sinne des Wortes. Autos sind meine Leidenschaft, und ich genieße es, mit PS-starken Maschinen auf unbekannten Straßen unterwegs zu sein.",
+        "Además de programar, me gusta estar en la vía rápida, en el sentido más literal de la palabra. Los autos son mi pasión, y disfruto estar en carreteras desconocidas con máquinas potentes.",
       icon: caricon,
     },
     {
-      title: "Entdeckungsfreude als Lebensmotto",
+      title: "La alegría de descubrir como lema de vida",
       description:
-        "Meine Reise als Webentwickler ist nur ein Teil meines Lebenswegs. Ich lebe nach dem Motto, dass das Abenteuer erst beginnt, wenn man das Bekannte hinter sich lässt. Das Entdecken neuer Orte ist meine Form der kreativen Inspiration.",
+        "Mi viaje como desarrollador web es solo una parte de mi camino de vida. Vivo según el lema de que la aventura solo comienza cuando dejas atrás lo conocido. Descubrir nuevos lugares es mi forma de inspiración creativa.",
       icon: travelicon,
     },
   ],
@@ -407,7 +407,7 @@ export const contactData = {
       },
       type: "text",
       validation: {
-        esp: "Por favor completar con tu",
+        esp: "Por favor completar con tu nombre",
         en: "Please fill in your name",
       },
       pattern: "{2}",
@@ -415,12 +415,12 @@ export const contactData = {
     {
       name: "email",
       placeholder: {
-        esp: "Deine E-Mail Adresse",
+        esp: "Tu dirección de correo electrónico",
         en: "Your E-Mail",
       },
       type: "email",
       validation: {
-        esp: "Bitte gebe deine Email ein",
+        esp: "Por favor ingresa tu correo electrónico",
         en: "Please fill in your email",
       },
       pattern: "[@]{4}",
@@ -428,12 +428,12 @@ export const contactData = {
     {
       name: "subject",
       placeholder: {
-        esp: "Deine Betreff",
+        esp: "Tu asunto",
         en: "Your Subject",
       },
       type: "text",
       validation: {
-        esp: "Bitte gebe einen Betreff ein",
+        esp: "Por favor ingresa un asunto",
         en: "Please fill in your subject",
       },
       pattern: "{10}",
@@ -441,20 +441,20 @@ export const contactData = {
   ],
   textarea: {
     placeholder: {
-      esp: "Deine Nachricht",
+      esp: "Tu mensaje",
       en: "Your Message",
     },
     name: "message",
     rows: 10,
     validation: {
-      esp: "Bitte gebe deine Nachricht ein",
+      esp: "Por favor ingresa tu mensaje",
       en: "Please fill in your message",
     },
     pattern: "{10}",
   },
   button: {
     value: {
-      esp: "Absenden",
+      esp: "Enviar",
       en: "Send",
     },
   },
@@ -467,11 +467,11 @@ export const contactData = {
   },
   privacyOptIn: {
     checkbox: {
-      esp: "Ich stimme zu, dass Alpay meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
-      en: "I agree that Alpay may use my personal data (name and e-mail address) to contact me.",
+      esp: "Estoy de acuerdo en que Tobias pueda utilizar mis datos personales (nombre y dirección de correo electrónico) para ponerse en contacto conmigo.",
+      en: "I agree that Tobias may use my personal data (name and e-mail address) to contact me.",
     },
     description: {
-      esp: "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben",
+      esp: "Al enviar esta solicitud, confirmas que has leído la política de privacidad",
       en: "By submitting this request, you acknowledge that you have read the Private Policy",
     },
   },
