@@ -8,28 +8,22 @@ import typescripticon from "../../assets/icons/typescripticon.svg";
 import reacticon from "../../assets/icons/reacticon.svg";
 import nextjsicon from "../../assets/icons/nextjsicon.svg";
 import nodejsicon from "../../assets/icons/nodejsicon.svg";
-import tailwindcssicon from "../../assets/icons/tailwindicon.svg";
 import mongodbicon from "../../assets/icons/mongoicon.svg";
-import vuejsicon from "../../assets/icons/vueicon.svg";
 import expressicon from "../../assets/icons/expressicon.svg";
 import sassscssicon from "../../assets/icons/sassicon.svg";
 import trelloicon from "../../assets/icons/trelloicon.svg";
-/* import apiicon from "../../assets/icons/apiicon.svg";*/
+import postgresqlicon from "../../assets/icons/postgresqlicon.svg";
 import axiosicon from "../../assets/icons/axiosicon.svg";
 import spotifyicon from "../../assets/icons/spotifyicon.svg";
-/* import netlifyicon from "../../assets/icons/netlifyicon.svg";*/
+import bootstrapicon from "../../assets/icons/bootstrapicon.svg";
 import rendericon from "../../assets/icons/rendericon.svg";
 import jwticon from "../../assets/icons/jwticon.svg";
-import wordpressicon from "../../assets/icons/wordpressicon.svg";
-import shopifyicon from "../../assets/icons/shopifyicon.svg";
-import webflowicon from "../../assets/icons/webflowicon.svg";
 import tastyMockup from "../../assets/img/tasty_mockup.webp";
 import instorMockup from "../../assets/img/instor_mockup.webp";
 import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
 import profilepicture from "../img/me2.webp";
-import caricon from "../../assets/icons/car-icon.svg";
-import travelicon from "../../assets/icons/travel-icon.svg";
-import hardwareicon from "../../assets/icons/hardware-icon.svg";
+import adobepremiereproicon from "../../assets/icons/adobepremiereproicon.svg";
+
 import nextjsiconwhite from "../../assets/icons/nextjsiconwhite.svg";
 import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
@@ -219,22 +213,10 @@ export const skillsDataWeb = [
         color: "#339933",
       },
       {
-        title: "Tailwind",
-        hash: "#Tailwind",
-        icon: tailwindcssicon,
-        color: "#38B2AC",
-      },
-      {
-        title: "MongoDB",
-        hash: "#MongoDB",
-        icon: mongodbicon,
-        color: "#449C45",
-      },
-      {
-        title: "Vue.js",
-        hash: "#Vue.js",
-        icon: vuejsicon,
-        color: "#4FC08D",
+        title: "PostgreSQL",
+        hash: "#postgreSQL",
+        icon: postgresqlicon,
+        color: "#000000",
       },
       {
         title: "Express",
@@ -248,6 +230,12 @@ export const skillsDataWeb = [
         icon: sassscssicon,
         color: "#CC6699",
       },
+      {
+        title: "Bootstrap",
+        hash: "#bootstrap",
+        icon: bootstrapicon,
+        color: "#8A2BE2",
+      },
     ],
   },
 ] as const;
@@ -256,7 +244,6 @@ export const skillsDataDesign = [
   {
     skillsTitle: "Design",
     skills: [
-      { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
       {
         title: "Adobe XD",
         hash: "#Adobe XD",
@@ -264,31 +251,11 @@ export const skillsDataDesign = [
         color: "#FF61F6",
       },
       { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
-    ],
-  },
-] as const;
-
-export const skillsDataCMS = [
-  {
-    skillsTitle: "CMS",
-    skills: [
       {
-        title: "WordPress",
-        hash: "#WordPress",
-        icon: wordpressicon,
-        color: "#21759B",
-      },
-      {
-        title: "Shopify",
-        hash: "#Shopify",
-        icon: shopifyicon,
-        color: "#7AB55C",
-      },
-      {
-        title: "Webflow",
-        hash: "#Webflow",
-        icon: webflowicon,
-        color: "#4353FF",
+        title: "Adobe Premiere Pro",
+        hash: "#Adobe Premiere Pro",
+        icon: adobepremiereproicon,
+        color: "#8A2BE2",
       },
     ],
   },
@@ -349,42 +316,36 @@ export const aboutMeData = {
   description_EN: "A few code snippets about me",
   paragraphs_ESP: [
     {
-      title: "Los circuitos de mi corazón",
+      title: "Mi Background",
       description:
-        "Cuando no estoy navegando en el mundo digital, exploró el fascinante universo de la tecnología y el hardware. Los circuitos y las soldaduras son como piezas de rompecabezas para mí en una emocionante aventura.",
-      icon: hardwareicon,
+        "Mi background está relacionado a las artes escénicas, lo que resulta atípico para la industria en la que actualmente me desempeño. Esto me ha permitido desarrollar soft skills con las cuales trabajar.",
     },
     {
-      title: "En la vía rápida de la vida",
+      title: "Actualmente",
       description:
-        "Además de programar, me gusta estar en la vía rápida, en el sentido más literal de la palabra. Los autos son mi pasión, y disfruto estar en carreteras desconocidas con máquinas potentes.",
-      icon: caricon,
+        "Actualmente estoy en búsqueda laboral activa y buscando proyectos web para ampliar mi stack de conocimientos.",
     },
     {
-      title: "La alegría de descubrir como lema de vida",
+      title: "Futuro",
       description:
-        "Mi viaje como desarrollador web es solo una parte de mi camino de vida. Vivo según el lema de que la aventura solo comienza cuando dejas atrás lo conocido. Descubrir nuevos lugares es mi forma de inspiración creativa.",
-      icon: travelicon,
+        "Mi objetivo principal es evolucionar hacia un rol de líder técnico, y estoy seguro de que mi combinación única de habilidades técnicas y experiencia en liderazgo me posiciona como un activo valioso para cualquier posición en la que termine.",
     },
   ],
   paragraphs_EN: [
     {
-      title: "The Circuits of My Heart",
+      title: "My Background",
       description:
-        "When I'm not navigating the digital world, I explore the fascinating realm of technology and hardware. Circuits and solder joints are like puzzle pieces to me in an exciting adventure.",
-      icon: hardwareicon,
+        "My background is related to performing arts, which is atypical for the industry I currently work in. This has allowed me to develop soft skills that I can leverage in my professional endeavors.",
     },
     {
-      title: "On the Fast Lane of Life",
+      title: "Currently",
       description:
-        "Besides coding, I like to be on the fast lane - in the truest sense of the word. Cars are my passion, and I enjoy being on unknown roads with powerful machines.",
-      icon: caricon,
+        "I am currently actively seeking employment and looking for web projects to expand my knowledge stack.",
     },
     {
-      title: "The Joy of Discovery as a Life Motto",
+      title: "Future",
       description:
-        "My journey as a web developer is only a part of my life path. I live by the motto that the adventure only begins when you leave the familiar behind. Discovering new places and cultures is my form of creative inspiration.",
-      icon: travelicon,
+        "My primary goal is to evolve into a Tech Lead, and I am confident that my unique blend of technical prowess and leadership experience positions me as a valuable asset for any position I end up on.",
     },
   ],
 };

@@ -85,13 +85,6 @@ const AboutMe: React.FC = () => {
               >
                 <div className="flex gap-6 flex-row justify-start items-center max-lg:flex-col max-lg:justify-center max-lg:text-center ">
                   <div>
-                    <img
-                      src={paragraph.icon}
-                      alt={paragraph.icon}
-                      className="w-24"
-                    />
-                  </div>
-                  <div>
                     <h2>{paragraph.title}</h2>
                   </div>
                 </div>

@@ -23,7 +23,7 @@ export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
 
 export function useMousePosition() {
   const [mousePosition, setMousePosition] = useState({ x: null, y: null });
-
+  // eslint-disable-next-line
   const updateMousePosition = (e: any) => {
     setMousePosition({ x: e.clientX, y: e.clientY });
   };
