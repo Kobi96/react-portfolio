@@ -9,6 +9,7 @@ import reacticon from "../../assets/icons/reacticon.svg";
 import nextjsicon from "../../assets/icons/nextjsicon.svg";
 import nodejsicon from "../../assets/icons/nodejsicon.svg";
 import mongodbicon from "../../assets/icons/mongoicon.svg";
+import wordpressicon from "../../assets/icons/wordpressicon.svg";
 import expressicon from "../../assets/icons/expressicon.svg";
 import sassscssicon from "../../assets/icons/sassicon.svg";
 import trelloicon from "../../assets/icons/trelloicon.svg";
@@ -22,8 +23,6 @@ import tastyMockup from "../../assets/img/tasty_mockup.webp";
 import instorMockup from "../../assets/img/instor_mockup.webp";
 import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
 import profilepicture from "../img/me2.webp";
-import adobepremiereproicon from "../../assets/icons/adobepremiereproicon.svg";
-
 import nextjsiconwhite from "../../assets/icons/nextjsiconwhite.svg";
 import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
@@ -252,10 +251,10 @@ export const skillsDataDesign = [
       },
       { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
       {
-        title: "Adobe Premiere Pro",
+        title: "WordPress",
         hash: "#Adobe Premiere Pro",
-        icon: adobepremiereproicon,
-        color: "#8A2BE2",
+        icon: wordpressicon,
+        color: "#1572B6",
       },
     ],
   },
