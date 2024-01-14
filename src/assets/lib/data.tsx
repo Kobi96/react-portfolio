@@ -1,6 +1,5 @@
 import adobexdicon from "../../assets/icons/adobexdicon.svg";
 import canvaicon from "../../assets/icons/canvaicon.svg";
-import figmaicon from "../../assets/icons/figmaicon.svg";
 import htmlicon from "../../assets/icons/htmlicon.svg";
 import cssicon from "../../assets/icons/cssicon.svg";
 import javascripticon from "../../assets/icons/javascripticon.svg";
@@ -8,17 +7,15 @@ import typescripticon from "../../assets/icons/typescripticon.svg";
 import reacticon from "../../assets/icons/reacticon.svg";
 import nextjsicon from "../../assets/icons/nextjsicon.svg";
 import nodejsicon from "../../assets/icons/nodejsicon.svg";
-import mongodbicon from "../../assets/icons/mongoicon.svg";
 import wordpressicon from "../../assets/icons/wordpressicon.svg";
 import expressicon from "../../assets/icons/expressicon.svg";
 import sassscssicon from "../../assets/icons/sassicon.svg";
 import trelloicon from "../../assets/icons/trelloicon.svg";
 import postgresqlicon from "../../assets/icons/postgresqlicon.svg";
 import axiosicon from "../../assets/icons/axiosicon.svg";
-import spotifyicon from "../../assets/icons/spotifyicon.svg";
+import reduxicon from "../../assets/icons/reduxicon.svg";
 import bootstrapicon from "../../assets/icons/bootstrapicon.svg";
-import rendericon from "../../assets/icons/rendericon.svg";
-import jwticon from "../../assets/icons/jwticon.svg";
+import auth0icon from "../../assets/icons/auth0icon.svg";
 import tastyMockup from "../../assets/img/tasty_mockup.webp";
 import instorMockup from "../../assets/img/instor_mockup.webp";
 import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
@@ -65,6 +62,38 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
+    title: "MSC-Amoblamientos",
+    description:
+      "Plataforma E-Commerce excepcionalmente exitosa llamada MSC-Amoblamientos, especializada en amoblamientos comerciales. Utilizando el stack PERN, lideré la creación de esta plataforma desde cero, implementando un diseño eficiente y una arquitectura robusta. Mi contribución abarcó desde el diseño y desarrollo hasta la implementación de características clave, como la gestión de inventario, carrito de compras y sistemas de pago seguros. La plataforma no solo cumplió con las expectativas comerciales, sino que también superó las metas de conversión y proporcionó una experiencia de usuario altamente satisfactoria. Este proyecto no solo demostró mis habilidades técnicas en el desarrollo web, sino también mi capacidad para liderar equipos y gestionar proyectos complejos.",
+    description_EN:
+      "An exceptionally successful e-commerce platform named MSC-Amoblamientos, specialized in commercial furnishings. Utilizing the PERN stack, I led the creation of this platform from scratch, implementing an efficient design and a robust architecture. My contribution spanned from design and development to the implementation of key features such as inventory management, shopping cart, and secure payment systems. The platform not only met business expectations but also exceeded conversion goals, providing a highly satisfying user experience. This project not only showcased my technical skills in web development but also demonstrated my ability to lead teams and manage complex projects.",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "JavaScript", icon: javascripticon },
+      { name: "React", icon: reacticon },
+      { name: "Trello", icon: trelloicon },
+      { name: "Axios", icon: axiosicon },
+      { name: "PostgreSQL", icon: postgresqlicon },
+      { name: "Express", icon: expressiconwhite },
+      { name: "Node.js", icon: nodejsicon },
+      { name: "Bootstrap", icon: bootstrapicon },
+      { name: "Auth0", icon: auth0icon },
+      { name: "Redux", icon: reduxicon },
+    ],
+    image: silentmoonMockup,
+    deploymenturl: "https://msc-amoblamientos.vercel.app/",
+    githuburl: "https://github.com/AgustinMandarini/MSC-Amoblamientos",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#FFD5BD",
+    },
+  },
+  {
     title: "Food App",
     description:
       "Una aplicación de recetas que construí como proyecto individual para el bootcamp de Henry utilizando React, Express, PostgreSQL y la API de Spoonacular. La aplicación se desarrolló en menos de un mes.",
@@ -76,12 +105,15 @@ export const projectsData = [
       { name: "JavaScript", icon: javascripticon },
       { name: "React", icon: reacticon },
       { name: "Axios", icon: axiosicon },
+      { name: "PostgreSQL", icon: postgresqlicon },
       { name: "Express", icon: expressiconwhite },
       { name: "Node.js", icon: nodejsicon },
+      { name: "Redux", icon: reduxicon },
     ],
     image: tastyMockup,
-    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+    deploymenturl: null,
+
+    githuburl: "https://github.com/Kobi96/PI-Food-main",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -91,39 +123,7 @@ export const projectsData = [
       projectcolor: "#70B9BE",
     },
   },
-  {
-    title: "MSC-Amoblamientos",
-    description:
-      "Plataforma E-Commerce excepcionalmente exitosa llamada MSC-Amoblamientos, especializada en amoblamientos comerciales. Utilizando el stack PERN, lideré la creación de esta plataforma desde cero, implementando un diseño eficiente y una arquitectura robusta. Mi contribución abarcó desde el diseño y desarrollo hasta la implementación de características clave, como la gestión de inventario, carrito de compras y sistemas de pago seguros. La plataforma no solo cumplió con las expectativas comerciales, sino que también superó las metas de conversión y proporcionó una experiencia de usuario altamente satisfactoria. Este proyecto no solo demostró mis habilidades técnicas en el desarrollo web, sino también mi capacidad para liderar equipos y gestionar proyectos complejos.",
-    description_EN:
-      "An exceptionally successful e-commerce platform named MSC-Amoblamientos, specialized in commercial furnishings. Utilizing the PERN stack, I led the creation of this platform from scratch, implementing an efficient design and a robust architecture. My contribution spanned from design and development to the implementation of key features such as inventory management, shopping cart, and secure payment systems. The platform not only met business expectations but also exceeded conversion goals, providing a highly satisfying user experience. This project not only showcased my technical skills in web development but also demonstrated my ability to lead teams and manage complex projects.",
-    technologies: [
-      { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
-      { name: "JavaScript", icon: javascripticon },
-      { name: "Spotify Api", icon: spotifyicon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-    ],
-    image: silentmoonMockup,
-    deploymenturl: "https://silentmoon-grpw.onrender.com/",
-    githuburl:
-      "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
-    githubicon: FiGithub,
-    deploymenticon: FiLink,
-    colors: {
-      main: "main-btn",
-      second: "secondary-btn",
-      icon: "white",
-      projectcolor: "#FFD5BD",
-    },
-  },
+
   {
     title: "Rick and Morty",
     description:
@@ -135,18 +135,15 @@ export const projectsData = [
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
       { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
       { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
+      { name: "PostgreSQL", icon: postgresqlicon },
       { name: "Express", icon: expressiconwhite },
       { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-      { name: "Trello", icon: trelloicon },
+      { name: "Redux", icon: reduxicon },
     ],
     image: instorMockup,
-    deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
-    githuburl: "https://github.com/AlpayC/Furniture_MERN",
+    deploymenturl: null,
+    githuburl: "https://github.com/Kobi96/rick_and_morty",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -441,6 +438,10 @@ export const toastMessages = {
   loadingProject: {
     esp: "🦄 La demostración en vivo se abrirá en breve. Los servidores están siendo iniciados...",
     en: "🦄 The live demo will open shortly. Starting servers...",
+  },
+  noDeployment: {
+    esp: "🦄 Este proyecto aún no ha sido deployado",
+    en: "🦄 This project hasn't been deployed yet",
   },
   successEmailSent: {
     esp: "🦄 Gracias por tu correo electrónico. Me pondré en contacto contigo lo más pronto posible.",

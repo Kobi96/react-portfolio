@@ -33,6 +33,14 @@ const ProjectSlider: React.FC = () => {
     }
   };
 
+  const noDeploy = () => {
+    if (language === "ESP") {
+      toast.info(toastMessages.noDeployment.esp);
+    } else {
+      toast.info(toastMessages.noDeployment.en);
+    }
+  };
+
   return (
     <React.Fragment>
       <section
@@ -128,14 +136,24 @@ const ProjectSlider: React.FC = () => {
                       </div>
                     </div>
                     <div className="buttons flex gap-10">
-                      <Button
-                        label="Live Demo"
-                        link={project.deploymenturl}
-                        iconSVG={project.deploymenticon}
-                        buttoncolor={project.colors.main}
-                        iconcolor={project.colors.icon}
-                        onClick={notifyServerRequest}
-                      />
+                      {project.deploymenturl ? (
+                        <Button
+                          label="Live Demo"
+                          link={project.deploymenturl}
+                          iconSVG={project.deploymenticon}
+                          buttoncolor={project.colors.main}
+                          iconcolor={project.colors.icon}
+                          onClick={notifyServerRequest}
+                        />
+                      ) : (
+                        <Button
+                          label="Live Demo"
+                          iconSVG={project.deploymenticon}
+                          buttoncolor={project.colors.main}
+                          iconcolor={project.colors.icon}
+                          onClick={noDeploy}
+                        />
+                      )}
                       <Button
                         label="Github Repository"
                         link={project.githuburl}
@@ -169,13 +187,24 @@ const ProjectSlider: React.FC = () => {
                   className="h-[35vh] w-full object-cover object-top rounded-3xl"
                 />
                 <div className="buttons flex gap-10 max-lg:flex-col">
-                  <Button
-                    label="Live Demo"
-                    link={project.deploymenturl}
-                    iconSVG={project.deploymenticon}
-                    buttoncolor={project.colors.main}
-                    iconcolor={project.colors.icon}
-                  />
+                  {project.deploymenturl ? (
+                    <Button
+                      label="Live Demo"
+                      link={project.deploymenturl}
+                      iconSVG={project.deploymenticon}
+                      buttoncolor={project.colors.main}
+                      iconcolor={project.colors.icon}
+                      onClick={notifyServerRequest}
+                    />
+                  ) : (
+                    <Button
+                      label="Live Demo"
+                      iconSVG={project.deploymenticon}
+                      buttoncolor={project.colors.main}
+                      iconcolor={project.colors.icon}
+                      onClick={noDeploy}
+                    />
+                  )}
                   <Button
                     label="Github Repository"
                     link={project.githuburl}
