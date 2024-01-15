@@ -1,16 +1,13 @@
 import React from "react";
-import Button from "./Button";
 import RadialGradient from "./RadialGradient";
 import { headerIntroData } from "../assets/lib/data";
 import { useSectionInView } from "../assets/lib/hooks";
-import { useActiveSectionContext } from "../context/active-section-context";
 import { useLanguage } from "../context/language-context";
 import { BsMouse } from "react-icons/bs";
 
 const HeaderIntro: React.FC = () => {
   const { language } = useLanguage();
   const { ref } = useSectionInView("Home", 0.5);
-  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -38,21 +35,6 @@ const HeaderIntro: React.FC = () => {
           : headerIntroData.description.en}
       </p>
 
-      <div className="button-container flex items-center justify-center mr-8 gap-10 mb-12 max-lg:flex-col max-lg:items-center">
-        {headerIntroData.buttons.map((button, index) => (
-          <Button
-            key={index}
-            label={language === "ESP" ? button.label.esp : button.label.en}
-            iconSVG={button.icon}
-            link={`#${button.name.toLocaleLowerCase()}`}
-            buttoncolor={button.color}
-            onClick={() => {
-              setActiveSection(button.name);
-              setTimeOfLastClick(Date.now());
-            }}
-          />
-        ))}
-      </div>
       <div className="scroll-down-container animate-bounce flex gap-6">
         <BsMouse className="text-[2.6rem]" />
       </div>
