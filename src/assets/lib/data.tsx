@@ -15,13 +15,15 @@ import postgresqlicon from "../../assets/icons/postgresqlicon.svg";
 import axiosicon from "../../assets/icons/axiosicon.svg";
 import reduxicon from "../../assets/icons/reduxicon.svg";
 import bootstrapicon from "../../assets/icons/bootstrapicon.svg";
+import javaicon from "../../assets/icons/javaicon.svg";
 import auth0icon from "../../assets/icons/auth0icon.svg";
 import tastyMockup from "../../assets/img/tasty_mockup.webp";
-import instorMockup from "../../assets/img/instor_mockup.webp";
+import eurekaMockup from "../../assets/img/eureka_mokup.webp";
 import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
 import profilepicture from "../img/me2.webp";
 import nextjsiconwhite from "../../assets/icons/nextjsiconwhite.svg";
 import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
+import tailwindicon from "../../assets/icons/tailwindicon.svg";
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
@@ -94,6 +96,36 @@ export const projectsData = [
     },
   },
   {
+    title: "Eureka",
+    description:
+      "Plataforma de e-learning desarrollada por un equipo multidisciplinario de profesionales apasionados y comprometidos. Con un enfoque en la colaboración y la innovación, el equipo ha creado un MVP sólido en solo 5 semanas, ofreciendo una experiencia educativa excepcional para profesores y estudiantes.",
+    description_EN:
+      "An e-learning platform developed by a multidisciplinary team of passionate and committed professionals. With a focus on collaboration and innovation, the team has created a solid MVP in just 5 weeks, offering an exceptional educational experience for teachers and students.",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "JavaScript", icon: javascripticon },
+      { name: "React", icon: reacticon },
+      { name: "Axios", icon: axiosicon },
+      { name: "Redux", icon: reduxicon },
+      { name: "Tailwind", icon: tailwindicon },
+      { name: "Trello", icon: trelloicon },
+      { name: "Java", icon: javaicon },
+    ],
+    image: eurekaMockup,
+    deploymenturl: "https://s14-11-m-java-e5su.vercel.app/",
+
+    githuburl: "https://github.com/No-Country/s14-11-m-java",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#70B9BE",
+    },
+  },
+  {
     title: "Food App",
     description:
       "Una aplicación de recetas que construí como proyecto individual para el bootcamp de Henry utilizando React, Express, PostgreSQL y la API de Spoonacular. La aplicación se desarrolló en menos de un mes.",
@@ -121,36 +153,6 @@ export const projectsData = [
       second: "secondary-btn",
       icon: "white",
       projectcolor: "#70B9BE",
-    },
-  },
-
-  {
-    title: "Rick and Morty",
-    description:
-      "Desarrollé de manera individual una aplicación llamada 'Rick and Morty' como proyecto durante el bootcamp de Henry. Esta aplicación utiliza tecnologías como React, Express, PostgreSQL y la API de Rick and Morty para mostrar cartas detalladas de los personajes emblemáticos de la serie. Mi enfoque durante este proyecto abarcó desde la concepción y diseño hasta la implementación de características clave, garantizando una experiencia interactiva y atractiva para los usuarios que buscan explorar y conocer más sobre los personajes de Rick and Morty.",
-    description_EN:
-      "I individually developed an application called 'Rick and Morty' as a project during the Henry bootcamp. This application leverages technologies such as React, Express, PostgreSQL, and the Rick and Morty API to showcase detailed cards of the iconic characters from the series. My focus during this project encompassed everything from conception and design to the implementation of key features, ensuring an interactive and engaging experience for users looking to explore and learn more about the characters of Rick and Morty.",
-    technologies: [
-      { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
-      { name: "JavaScript", icon: javascripticon },
-      { name: "React", icon: reacticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "PostgreSQL", icon: postgresqlicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      { name: "Redux", icon: reduxicon },
-    ],
-    image: instorMockup,
-    deploymenturl: null,
-    githuburl: "https://github.com/Kobi96/rick_and_morty",
-    githubicon: FiGithub,
-    deploymenticon: FiLink,
-    colors: {
-      main: "main-btn",
-      second: "secondary-btn",
-      icon: "white",
-      projectcolor: "#E3964A",
     },
   },
 ] as const;
