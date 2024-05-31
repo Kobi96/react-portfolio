@@ -24,6 +24,7 @@ import profilepicture from "../img/me2.webp";
 import nextjsiconwhite from "../../assets/icons/nextjsiconwhite.svg";
 import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
 import tailwindicon from "../../assets/icons/tailwindicon.svg";
+import mongoicon from "../../assets/icons/mongoicon.svg";
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
@@ -233,6 +234,12 @@ export const skillsDataWeb = [
         hash: "#bootstrap",
         icon: bootstrapicon,
         color: "#8A2BE2",
+      },
+      {
+        title: "MongoDB",
+        hash: "#mongo",
+        icon: mongoicon,
+        color: "#339933",
       },
     ],
   },
