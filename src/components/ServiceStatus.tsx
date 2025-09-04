@@ -49,7 +49,6 @@ const ServiceStatus: React.FC = () => {
               className={`status-icon-wave  w-[inherit] h-[inherit] rounded-[inherit] ${iconColor()}   animate-ping `}
             ></div>
           </div>
-          <p className={`status-text ${statusColor()} `}>Status: {status}</p>
         </div>
       </Link>
     </React.Fragment>
